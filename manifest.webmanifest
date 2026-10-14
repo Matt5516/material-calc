@@ -1,0 +1,21 @@
+{
+ "name": "BagOrBulk",
+ "short_name": "BagOrBulk",
+ "description": "How much to buy, and whether bags or a delivery costs less.",
+ "start_url": "./",
+ "display": "standalone",
+ "background_color": "#0b1020",
+ "theme_color": "#16a34a",
+ "icons": [
+  {
+   "src": "favicon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml"
+  },
+  {
+   "src": "apple-touch-icon.png",
+   "sizes": "180x180",
+   "type": "image/png"
+  }
+ ]
+}
