@@ -2,7 +2,7 @@
 
 > Free concrete, gravel, mulch and topsoil calculators. Get cubic yards, tons and bag counts, and see whether bags or a bulk delivery costs less.
 
-URL: https://matt5516.github.io/material-calc/
+URL: https://bagorbulk.com/
 Last updated: 2026-10-14
 Cost: free, no signup, runs in the browser.
 
@@ -15,27 +15,27 @@ Cost: free, no signup, runs in the browser.
 - Typical 2026 break-even where bulk delivery beats bags: gravel about 0.5 yd³, topsoil about 0.9 yd³, concrete about 1.2 yd³ (with a ready-mix short-load fee), mulch about 5.4 yd³.
 
 ## Tools (one page each)
-- [Concrete calculator](https://matt5516.github.io/material-calc/concrete-calculator/): Free concrete calculator for slabs, round pads and post holes. Get cubic yards and 40, 60 or 80 lb bag counts, and see if bags or a ready-mix truck costs less. How it works: Cubic feet = length × width × thickness (in) ÷ 12, plus extra for waste. Bags = cubic feet ÷ bag yield (80 lb = 0.6 ft³). Ready-mix cost includes delivery and any short-load fee.
-- [Gravel calculator](https://matt5516.github.io/material-calc/gravel-calculator/): Free gravel calculator. Enter length, width and depth to get cubic yards, tons and bags of gravel, with the delivered cost of a bulk load versus buying bags. How it works: Cubic yards = length × width × depth (in) ÷ 324; tons = cubic yards × density (about 1.4 for gravel). Bulk cost = tons ordered × price + delivery.
-- [Mulch calculator](https://matt5516.github.io/material-calc/mulch-calculator/): Free mulch calculator. Enter your bed size and depth to see cubic yards and 2 or 3 cu ft bags of mulch, and whether bags or bulk delivery costs less. How it works: Cubic feet = area × depth (in) ÷ 12. Bags = cubic feet ÷ bag size (2 or 3 ft³). One cubic yard = 13.5 bags of 2 ft³.
-- [Topsoil & sand calculator](https://matt5516.github.io/material-calc/topsoil-calculator/): Free topsoil and sand calculator for raised beds, lawns and paver bases. Get cubic feet, cubic yards, bags and tons, and compare bags with a bulk delivery. How it works: Cubic feet = area × depth (in) ÷ 12, plus 10% for settling. Tons = cubic yards × density (topsoil about 1.1, sand about 1.35).
-- [Cubic yard calculator](https://matt5516.github.io/material-calc/cubic-yard-calculator/): Free cubic yard calculator: enter length, width and depth to get cubic yards, cubic feet, cubic meters and tons of gravel, soil, sand, mulch or concrete. How it works: Cubic yards = cubic feet ÷ 27; cubic feet = area (ft²) × depth (in) ÷ 12. Tons = cubic yards × the material’s density, which you can change.
+- [Concrete calculator](https://bagorbulk.com/concrete-calculator/): Free concrete calculator for slabs, round pads and post holes. Get cubic yards and 40, 60 or 80 lb bag counts, and see if bags or a ready-mix truck costs less. How it works: Cubic feet = length × width × thickness (in) ÷ 12, plus extra for waste. Bags = cubic feet ÷ bag yield (80 lb = 0.6 ft³). Ready-mix cost includes delivery and any short-load fee.
+- [Gravel calculator](https://bagorbulk.com/gravel-calculator/): Free gravel calculator. Enter length, width and depth to get cubic yards, tons and bags of gravel, with the delivered cost of a bulk load versus buying bags. How it works: Cubic yards = length × width × depth (in) ÷ 324; tons = cubic yards × density (about 1.4 for gravel). Bulk cost = tons ordered × price + delivery.
+- [Mulch calculator](https://bagorbulk.com/mulch-calculator/): Free mulch calculator. Enter your bed size and depth to see cubic yards and 2 or 3 cu ft bags of mulch, and whether bags or bulk delivery costs less. How it works: Cubic feet = area × depth (in) ÷ 12. Bags = cubic feet ÷ bag size (2 or 3 ft³). One cubic yard = 13.5 bags of 2 ft³.
+- [Topsoil & sand calculator](https://bagorbulk.com/topsoil-calculator/): Free topsoil and sand calculator for raised beds, lawns and paver bases. Get cubic feet, cubic yards, bags and tons, and compare bags with a bulk delivery. How it works: Cubic feet = area × depth (in) ÷ 12, plus 10% for settling. Tons = cubic yards × density (topsoil about 1.1, sand about 1.35).
+- [Cubic yard calculator](https://bagorbulk.com/cubic-yard-calculator/): Free cubic yard calculator: enter length, width and depth to get cubic yards, cubic feet, cubic meters and tons of gravel, soil, sand, mulch or concrete. How it works: Cubic yards = cubic feet ÷ 27; cubic feet = area (ft²) × depth (in) ÷ 12. Tons = cubic yards × the material’s density, which you can change.
 
 ## Guides
-- [How many bags of concrete?](https://matt5516.github.io/material-calc/how-many-bags-of-concrete/): Bags of concrete for common slab sizes at 4, 5 and 6 inches thick, with 10% extra: 80 lb and 60 lb bag counts and cubic yards, from the BagOrBulk calculator.
-- [Bags vs ready-mix concrete](https://matt5516.github.io/material-calc/concrete-bags-vs-ready-mix/): At what size does a ready-mix truck beat 80 lb bags? Cost of bags versus ready-mix delivery from ¼ to 5 cubic yards, including short-load fees.
-- [Concrete per fence post](https://matt5516.github.io/material-calc/concrete-for-fence-posts/): Bags of 80 lb and 60 lb concrete per fence or deck post hole for 6 to 12 inch holes, 2 to 4 feet deep, with 10% extra.
-- [How thick should a slab be?](https://matt5516.github.io/material-calc/concrete-slab-thickness/): Typical concrete thickness for sidewalks, patios, shed bases, hot tub pads, driveways and garage floors, and how much more concrete each extra inch takes.
-- [Cubic yards to tons](https://matt5516.github.io/material-calc/cubic-yards-to-tons/): How much a cubic yard of gravel, sand, topsoil and mulch weighs, with a cubic-yard-to-tons chart. A yard of gravel weighs about 1.4 tons.
-- [How much gravel for a driveway?](https://matt5516.github.io/material-calc/gravel-for-driveway/): Tons of gravel for common driveway sizes at 4 and 6 inches deep with 10% extra, plus delivered cost, and how to layer a gravel driveway.
-- [Gravel for paths and patios](https://matt5516.github.io/material-calc/pea-gravel-calculator-guide/): Pea gravel for garden paths and patios: tons and 0.5 ft³ bags for common path sizes at 2 inches deep, and when bags beat a delivery.
-- [Mulch coverage chart](https://matt5516.github.io/material-calc/mulch-coverage-chart/): Square feet one cubic yard of mulch covers at 1 to 6 inches deep, and bags per 100 square feet. One yard covers about 108 sq ft at 3 inches.
-- [Bags of mulch in a yard](https://matt5516.github.io/material-calc/bags-of-mulch-in-a-yard/): 13.5 two-cubic-foot bags or 9 three-cubic-foot bags make one cubic yard of mulch. See bag counts and when bulk mulch delivery is cheaper.
-- [Raised bed soil chart](https://matt5516.github.io/material-calc/raised-bed-soil-calculator/): Soil for 4×4, 4×8, 3×6 and 4×12 raised beds at 6 to 12 inches deep: cubic feet, cubic yards and 1.5 cu ft bags, and when a bulk soil delivery is cheaper.
-- [Topsoil for a lawn](https://matt5516.github.io/material-calc/topsoil-for-lawn/): Cubic yards of topsoil to top-dress or rebuild a lawn of 500 to 5,000 square feet at 1, 2 and 4 inches deep, with 10% extra for settling.
-- [Sand and base for pavers](https://matt5516.github.io/material-calc/sand-and-gravel-for-pavers/): Bedding sand at 1 inch and gravel base at 4 inches for 10×10 to 16×20 paver patios: tons, bags and the cheaper way to buy each.
-- [Cubic feet to cubic yards](https://matt5516.github.io/material-calc/cubic-feet-to-cubic-yards/): There are 27 cubic feet in a cubic yard. Convert cubic feet to cubic yards and cubic meters with a quick chart, plus square feet × depth to yards.
-- [Bag or bulk: how to decide](https://matt5516.github.io/material-calc/bag-or-bulk/): When to buy mulch, gravel, soil and concrete in bags and when to order a bulk delivery: break-even sizes, delivery fees, labor and storage.
+- [How many bags of concrete?](https://bagorbulk.com/how-many-bags-of-concrete/): Bags of concrete for common slab sizes at 4, 5 and 6 inches thick, with 10% extra: 80 lb and 60 lb bag counts and cubic yards, from the BagOrBulk calculator.
+- [Bags vs ready-mix concrete](https://bagorbulk.com/concrete-bags-vs-ready-mix/): At what size does a ready-mix truck beat 80 lb bags? Cost of bags versus ready-mix delivery from ¼ to 5 cubic yards, including short-load fees.
+- [Concrete per fence post](https://bagorbulk.com/concrete-for-fence-posts/): Bags of 80 lb and 60 lb concrete per fence or deck post hole for 6 to 12 inch holes, 2 to 4 feet deep, with 10% extra.
+- [How thick should a slab be?](https://bagorbulk.com/concrete-slab-thickness/): Typical concrete thickness for sidewalks, patios, shed bases, hot tub pads, driveways and garage floors, and how much more concrete each extra inch takes.
+- [Cubic yards to tons](https://bagorbulk.com/cubic-yards-to-tons/): How much a cubic yard of gravel, sand, topsoil and mulch weighs, with a cubic-yard-to-tons chart. A yard of gravel weighs about 1.4 tons.
+- [How much gravel for a driveway?](https://bagorbulk.com/gravel-for-driveway/): Tons of gravel for common driveway sizes at 4 and 6 inches deep with 10% extra, plus delivered cost, and how to layer a gravel driveway.
+- [Gravel for paths and patios](https://bagorbulk.com/pea-gravel-calculator-guide/): Pea gravel for garden paths and patios: tons and 0.5 ft³ bags for common path sizes at 2 inches deep, and when bags beat a delivery.
+- [Mulch coverage chart](https://bagorbulk.com/mulch-coverage-chart/): Square feet one cubic yard of mulch covers at 1 to 6 inches deep, and bags per 100 square feet. One yard covers about 108 sq ft at 3 inches.
+- [Bags of mulch in a yard](https://bagorbulk.com/bags-of-mulch-in-a-yard/): 13.5 two-cubic-foot bags or 9 three-cubic-foot bags make one cubic yard of mulch. See bag counts and when bulk mulch delivery is cheaper.
+- [Raised bed soil chart](https://bagorbulk.com/raised-bed-soil-calculator/): Soil for 4×4, 4×8, 3×6 and 4×12 raised beds at 6 to 12 inches deep: cubic feet, cubic yards and 1.5 cu ft bags, and when a bulk soil delivery is cheaper.
+- [Topsoil for a lawn](https://bagorbulk.com/topsoil-for-lawn/): Cubic yards of topsoil to top-dress or rebuild a lawn of 500 to 5,000 square feet at 1, 2 and 4 inches deep, with 10% extra for settling.
+- [Sand and base for pavers](https://bagorbulk.com/sand-and-gravel-for-pavers/): Bedding sand at 1 inch and gravel base at 4 inches for 10×10 to 16×20 paver patios: tons, bags and the cheaper way to buy each.
+- [Cubic feet to cubic yards](https://bagorbulk.com/cubic-feet-to-cubic-yards/): There are 27 cubic feet in a cubic yard. Convert cubic feet to cubic yards and cubic meters with a quick chart, plus square feet × depth to yards.
+- [Bag or bulk: how to decide](https://bagorbulk.com/bag-or-bulk/): When to buy mulch, gravel, soil and concrete in bags and when to order a bulk delivery: break-even sizes, delivery fees, labor and storage.
 
 ## FAQ
 ### How do I calculate cubic yards?
@@ -57,6 +57,6 @@ At typical 2026 prices, bulk wins above about half a cubic yard of gravel, about
 About 10% for concrete, gravel and soil (spillage, compaction and settling) and 5% for mulch. The calculators add it automatically, and you can change it.
 
 ## Related tools
-- [GradeOrFlip](https://matt5516.github.io/card-flip-calc/): Is it worth grading? Profit and break-even by grade for PSA, SGC, BGS and CGC.
-- [EnrollMath](https://matt5516.github.io/open-enrollment-calc/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
-- [DynastyMath](https://matt5516.github.io/fantasy-tools/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
+- [GradeOrFlip](https://gradeorflip.com/): Is it worth grading? Profit and break-even by grade for PSA, SGC, BGS and CGC.
+- [EnrollMath](https://enrollmath.com/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
+- [DynastyMath](https://dynastymath.com/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.

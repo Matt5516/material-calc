@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://matt5516.github.io/material-calc/sitemap.xml
+Sitemap: https://bagorbulk.com/sitemap.xml
