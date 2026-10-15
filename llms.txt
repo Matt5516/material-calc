@@ -3,7 +3,7 @@
 > Free concrete, gravel, mulch and topsoil calculators. Get cubic yards, tons and bag counts, and see whether bags or a bulk delivery costs less.
 
 URL: https://bagorbulk.com/
-Last updated: 2026-10-14
+Last updated: 2026-10-15
 Cost: free, no signup, runs in the browser.
 
 ## Key facts
@@ -60,3 +60,4 @@ About 10% for concrete, gravel and soil (spillage, compaction and settling) and 
 - [GradeOrFlip](https://gradeorflip.com/): Is it worth grading? Profit and break-even by grade for PSA, SGC, BGS and CGC.
 - [EnrollMath](https://enrollmath.com/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
 - [DynastyMath](https://dynastymath.com/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
+- [ClockInMath](https://matt5516.github.io/time-card-calc/): Time card calculator: weekly hours, decimal hours, overtime and gross pay, with a printable timesheet.
