@@ -54,6 +54,42 @@ function plan(o){
 }
 // coverage of 1 cubic yard at a depth (in) -> square feet
 function coverage(depthIn){ return depthIn>0? r2(CUFT_PER_YD*12/depthIn) : 0; }
-var api = {MATERIALS:MATERIALS, CUFT_PER_YD:CUFT_PER_YD, areaSqFt:areaSqFt, cuft:cuft, totalCuFt:totalCuFt, withWaste:withWaste, bagsNeeded:bagsNeeded, plan:plan, coverage:coverage, r2:r2, ceilTo:ceilTo};
+// ---- Grass seed. Rates are lb of seed per 1,000 sq ft: {lo, mid, hi} for a new lawn and for overseeding. mid is the default (conservative, not the top of the range).
+// Sources: see the grass seed guide (Purdue AY-25-W, Virginia Tech, Univ. of Tennessee W160-B, NC Dept. of Agriculture note). Overseeding rates are roughly half to two-thirds of new-lawn rates.
+var SEED = {
+ 'tall-fescue':   {name:'Tall fescue', season:'cool', nw:{lo:6,mid:7.5,hi:9}, ov:{lo:4,mid:5,hi:6}},
+ 'bluegrass':     {name:'Kentucky bluegrass', season:'cool', nw:{lo:2,mid:2.5,hi:3}, ov:{lo:1,mid:1.5,hi:2}},
+ 'ryegrass':      {name:'Perennial ryegrass', season:'cool', nw:{lo:5,mid:7,hi:9}, ov:{lo:3,mid:4,hi:5}},
+ 'fine-fescue':   {name:'Fine fescue', season:'cool', nw:{lo:4,mid:4.5,hi:5}, ov:{lo:2,mid:2.5,hi:3}},
+ 'bermuda':       {name:'Bermuda (hulled)', season:'warm', nw:{lo:0.5,mid:1,hi:2}, ov:{lo:0.5,mid:0.75,hi:1}},
+ 'zoysia':        {name:'Zoysia (seeded)', season:'warm', nw:{lo:1,mid:2,hi:3}, ov:{lo:0.5,mid:1,hi:1.5}},
+ 'centipede':     {name:'Centipede', season:'warm', nw:{lo:0.25,mid:0.4,hi:0.5}, ov:{lo:0.2,mid:0.25,hi:0.4}}
+};
+var SEED_BAGS = [3,7,20,50];
+function sqftFrom(o){ if(o.sqft!=null&&o.sqft!=='') return +o.sqft||0; if(o.acres) return (+o.acres||0)*43560; return (+o.l||0)*(+o.w||0); }
+// o: {sqft | acres | l,w (ft), type, mode ('new'|'over'), rate (lb/1000, optional override), price (per bag, optional), bagLbs (size you will buy, optional)}
+function seedPlan(o){
+  var S=SEED[o.type]||SEED['tall-fescue'], R=S[o.mode==='over'?'ov':'nw'], area=sqftFrom(o);
+  var rate=(o.rate!=null&&o.rate!==''&&+o.rate>0)? +o.rate : R.mid, k=area/1000;
+  var bags={}; SEED_BAGS.forEach(function(b){ bags[b]=k>0? Math.ceil(k*rate/b - 1e-9) : 0; });
+  var lbs=k*rate, bl=+o.bagLbs||0, cost=(o.price!=null&&o.price!==''&&+o.price>0&&bl>0)? bags[bl]*(+o.price) : null;
+  return {area:r2(area), rate:rate, lo:r2(k*R.lo), mid:r2(lbs), hi:r2(k*R.hi), lbs:r2(lbs), bags:bags, cost:cost==null?null:r2(cost), rateLo:R.lo, rateHi:R.hi};
+}
+// Most practical single bag size: least seed left over among sizes that take 6 bags or fewer; if none, the biggest bag. Ties go to the larger bag.
+function bestBag(lbs){ var best=null; SEED_BAGS.forEach(function(b){ var n=Math.ceil(lbs/b-1e-9), over=n*b-lbs; if(n>=1&&n<=6&&(best===null||over<best.over-1e-9||(Math.abs(over-best.over)<1e-9&&b>best.size))) best={size:b,n:n,over:over}; });
+  if(!best){ var b2=SEED_BAGS[SEED_BAGS.length-1], n2=Math.ceil(lbs/b2-1e-9); best={size:b2,n:n2,over:n2*b2-lbs}; } best.over=r2(best.over); return best; }
+// ---- Pavers. o: {shape:'rect'|'circle', l, w (ft; circle: l = diameter), pl, pw (paver inches), waste (% extra pavers, default 7), baseIn (default 4), sandIn (default 1), baseWaste, sandWaste (% , default 10), price (per paver, optional)}
+function paverPlan(o){
+  var area=o.shape==='circle'? PI*(+o.l||0)*(+o.l||0)/4 : (+o.l||0)*(+o.w||0);
+  var pl=+o.pl||0, pw=+o.pw||0, per=(pl>0&&pw>0)? 144/(pl*pw) : 0;
+  var ws=(o.waste==null||o.waste==='')?7:+o.waste;
+  var net=area*per, pavers=Math.ceil(net*(1+ws/100) - 1e-9);
+  var bi=(o.baseIn==null||o.baseIn==='')?4:+o.baseIn, si=(o.sandIn==null||o.sandIn==='')?1:+o.sandIn;
+  var base=plan({material:'gravel', cuft:area*bi/12, waste:o.baseWaste==null?10:o.baseWaste});
+  var sand=plan({material:'sand', cuft:area*si/12, waste:o.sandWaste==null?10:o.sandWaste});
+  var cost=(o.price!=null&&o.price!==''&&+o.price>0)? pavers*(+o.price) : null;
+  return {area:r2(area), perSqFt:Math.round(per*1000)/1000, net:Math.ceil(net-1e-9), pavers:pavers, base:base, sand:sand, cost:cost==null?null:r2(cost)};
+}
+var api = {SEED:SEED, SEED_BAGS:SEED_BAGS, seedPlan:seedPlan, bestBag:bestBag, paverPlan:paverPlan, MATERIALS:MATERIALS, CUFT_PER_YD:CUFT_PER_YD, areaSqFt:areaSqFt, cuft:cuft, totalCuFt:totalCuFt, withWaste:withWaste, bagsNeeded:bagsNeeded, plan:plan, coverage:coverage, r2:r2, ceilTo:ceilTo};
 if (typeof module!=='undefined' && module.exports) module.exports=api; else root.BBCalc=api;
 })(typeof window!=='undefined'?window:this);
