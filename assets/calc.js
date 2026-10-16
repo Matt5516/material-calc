@@ -55,11 +55,11 @@ function plan(o){
 // coverage of 1 cubic yard at a depth (in) -> square feet
 function coverage(depthIn){ return depthIn>0? r2(CUFT_PER_YD*12/depthIn) : 0; }
 // ---- Grass seed. Rates are lb of seed per 1,000 sq ft: {lo, mid, hi} for a new lawn and for overseeding. mid is the default (conservative, not the top of the range).
-// Sources: see the grass seed guide (Purdue AY-25-W, Virginia Tech, Univ. of Tennessee W160-B, NC Dept. of Agriculture note). Overseeding rates are roughly half to two-thirds of new-lawn rates.
+// Sources: see the grass seed guide (Purdue AY-25-W, Virginia Tech SPES-299-C Table 1, Univ. of Tennessee W160-B). Overseeding rates are roughly half to two-thirds of new-lawn rates.
 var SEED = {
  'tall-fescue':   {name:'Tall fescue', season:'cool', nw:{lo:6,mid:7.5,hi:9}, ov:{lo:4,mid:5,hi:6}},
  'bluegrass':     {name:'Kentucky bluegrass', season:'cool', nw:{lo:2,mid:2.5,hi:3}, ov:{lo:1,mid:1.5,hi:2}},
- 'ryegrass':      {name:'Perennial ryegrass', season:'cool', nw:{lo:5,mid:7,hi:9}, ov:{lo:3,mid:4,hi:5}},
+ 'ryegrass':      {name:'Perennial ryegrass', season:'cool', nw:{lo:3,mid:4.5,hi:6}, ov:{lo:2,mid:3,hi:4}},
  'fine-fescue':   {name:'Fine fescue', season:'cool', nw:{lo:4,mid:4.5,hi:5}, ov:{lo:2,mid:2.5,hi:3}},
  'bermuda':       {name:'Bermuda (hulled)', season:'warm', nw:{lo:0.5,mid:1,hi:2}, ov:{lo:0.5,mid:0.75,hi:1}},
  'zoysia':        {name:'Zoysia (seeded)', season:'warm', nw:{lo:1,mid:2,hi:3}, ov:{lo:0.5,mid:1,hi:1.5}},

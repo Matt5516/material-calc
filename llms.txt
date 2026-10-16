@@ -13,7 +13,7 @@ Cost: free, no signup, runs in the browser.
 - Gravel weighs about 1.4 tons per cubic yard; sand about 1.35; topsoil about 1.1 (dry); mulch about 0.3.
 - One cubic yard of mulch = 13.5 bags of 2 ft³ and covers about 108 sq ft at 3 in deep.
 - Typical 2026 break-even where bulk delivery beats bags: gravel about 0.5 yd³, topsoil about 0.9 yd³, concrete about 1.2 yd³ (with a ready-mix short-load fee), mulch about 5.4 yd³.
-- Grass seed (new lawn, mid-range lb per 1,000 sq ft): tall fescue 7.5 (range 6–9), Kentucky bluegrass 2.5 (2–3), perennial ryegrass 7 (5–9), fine fescue 4.5 (4–5), hulled bermuda 1 (0.5–2), centipede 0.4 (0.25–0.5). Overseeding takes about half to two-thirds as much. A 5,000 sq ft tall fescue lawn needs about 37.5 lb.
+- Grass seed (new lawn, mid-range lb per 1,000 sq ft): tall fescue 7.5 (range 6–9), Kentucky bluegrass 2.5 (2–3), perennial ryegrass 4.5 (3–6), fine fescue 4.5 (4–5), hulled bermuda 1 (0.5–2), centipede 0.4 (0.25–0.5). Overseeding takes about half to two-thirds as much. A 5,000 sq ft tall fescue lawn needs about 37.5 lb.
 - Pavers per sq ft = 144 ÷ (length in × width in): 4×8 = 4.5, 6×6 = 4, 6×9 = 2.67, 12×12 = 1. A 12×12 ft patio of 6×9 in pavers needs 411 with 7% extra, plus about 2.7 tons of 4 in gravel base and 0.66 tons of 1 in bedding sand.
 - Sand weighs about 1.35 tons per cubic yard; a 50 lb bag is about 0.5 cubic feet, so a yard is about 54 bags.
 
