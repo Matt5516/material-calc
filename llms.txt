@@ -3,7 +3,7 @@
 > Free concrete, gravel, mulch and topsoil calculators. Get cubic yards, tons and bag counts, and see whether bags or a bulk delivery costs less.
 
 URL: https://bagorbulk.com/
-Last updated: 2026-10-17
+Last updated: 2026-10-18
 Cost: free, no signup, runs in the browser.
 
 ## Key facts
@@ -44,6 +44,61 @@ Cost: free, no signup, runs in the browser.
 - [How many pavers do I need?](https://bagorbulk.com/how-many-pavers-do-i-need/): Pavers needed for 10×10 to 20×20 patios in 4×8, 6×6, 6×9, 12×12, 16×16 and 12×24 sizes with 7% extra, plus pavers per square foot and base and sand quantities.
 - [Cubic feet to cubic yards](https://bagorbulk.com/cubic-feet-to-cubic-yards/): There are 27 cubic feet in a cubic yard. Convert cubic feet to cubic yards and cubic meters with a quick chart, plus square feet × depth to yards.
 - [Bag or bulk: how to decide](https://bagorbulk.com/bag-or-bulk/): When to buy mulch, gravel, soil and concrete in bags and when to order a bulk delivery: break-even sizes, delivery fees, labor and storage.
+- [Concrete slab calculator chart](https://bagorbulk.com/concrete-slab-calculator-chart/): Cubic yards and 80 lb bags of concrete for 4×4 to 30×30 ft slabs at 4, 5 and 6 inches thick, with bag cost versus ready-mix. Click a size for details.
+- [Concrete for a 4×4 slab](https://bagorbulk.com/how-much-concrete-for-4x4-slab/): A 4×4 ft slab at 4 in needs 0.22 yd³ or 10 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 8×8 slab](https://bagorbulk.com/how-much-concrete-for-8x8-slab/): A 8×8 ft slab at 4 in needs 0.87 yd³ or 40 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 10×10 slab](https://bagorbulk.com/how-much-concrete-for-10x10-slab/): A 10×10 ft slab at 4 in needs 1.36 yd³ or 62 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 10×12 slab](https://bagorbulk.com/how-much-concrete-for-10x12-slab/): A 10×12 ft slab at 4 in needs 1.63 yd³ or 74 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 10×20 slab](https://bagorbulk.com/how-much-concrete-for-10x20-slab/): A 10×20 ft slab at 4 in needs 2.72 yd³ or 123 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 12×12 slab](https://bagorbulk.com/how-much-concrete-for-12x12-slab/): A 12×12 ft slab at 4 in needs 1.96 yd³ or 88 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 12×16 slab](https://bagorbulk.com/how-much-concrete-for-12x16-slab/): A 12×16 ft slab at 4 in needs 2.61 yd³ or 118 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 12×20 slab](https://bagorbulk.com/how-much-concrete-for-12x20-slab/): A 12×20 ft slab at 4 in needs 3.26 yd³ or 147 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 16×16 slab](https://bagorbulk.com/how-much-concrete-for-16x16-slab/): A 16×16 ft slab at 4 in needs 3.48 yd³ or 157 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 20×20 slab](https://bagorbulk.com/how-much-concrete-for-20x20-slab/): A 20×20 ft slab at 4 in needs 5.43 yd³ or 245 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 20×24 slab](https://bagorbulk.com/how-much-concrete-for-20x24-slab/): A 20×24 ft slab at 4 in needs 6.52 yd³ or 294 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 24×24 slab](https://bagorbulk.com/how-much-concrete-for-24x24-slab/): A 24×24 ft slab at 4 in needs 7.82 yd³ or 352 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Concrete for a 30×30 slab](https://bagorbulk.com/how-much-concrete-for-30x30-slab/): A 30×30 ft slab at 4 in needs 12.22 yd³ or 550 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
+- [Gravel driveway and patio chart](https://bagorbulk.com/gravel-driveway-and-patio-chart/): Tons and cubic yards of gravel for common driveway and patio base sizes at 4 inches, with delivered cost. Click a size for 2 to 8 inch depths.
+- [Gravel for a 20×10 driveway](https://bagorbulk.com/gravel-for-20x10-driveway/): Gravel for a 20×10 ft driveway: 3.8 tons (2.7 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Gravel for a 24×12 driveway](https://bagorbulk.com/gravel-for-24x12-driveway/): Gravel for a 24×12 ft driveway: 5.5 tons (3.9 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Gravel for a 50×10 driveway](https://bagorbulk.com/gravel-for-50x10-driveway/): Gravel for a 50×10 ft driveway: 9.5 tons (6.8 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Gravel for a 50×12 driveway](https://bagorbulk.com/gravel-for-50x12-driveway/): Gravel for a 50×12 ft driveway: 11.4 tons (8.2 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Gravel for a 100×12 driveway](https://bagorbulk.com/gravel-for-100x12-driveway/): Gravel for a 100×12 ft driveway: 22.8 tons (16.3 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Gravel for a 20×20 driveway](https://bagorbulk.com/gravel-for-20x20-driveway/): Gravel for a 20×20 ft driveway: 7.6 tons (5.4 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Gravel base for a 10×10 patio](https://bagorbulk.com/gravel-for-10x10-patio/): Gravel for a 10×10 ft patio base: 1.9 tons (1.4 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Gravel base for a 12×12 patio](https://bagorbulk.com/gravel-for-12x12-patio/): Gravel for a 12×12 ft patio base: 2.7 tons (2.0 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Gravel base for a 12×16 patio](https://bagorbulk.com/gravel-for-12x16-patio/): Gravel for a 12×16 ft patio base: 3.6 tons (2.6 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Gravel base for a 14×14 patio](https://bagorbulk.com/gravel-for-14x14-patio/): Gravel for a 14×14 ft patio base: 3.7 tons (2.7 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Gravel base for a 16×16 patio](https://bagorbulk.com/gravel-for-16x16-patio/): Gravel for a 16×16 ft patio base: 4.9 tons (3.5 yd³) at 4 in. Chart for 2 to 8 inches, with bag vs bulk cost.
+- [Mulch by bed size chart](https://bagorbulk.com/mulch-bed-size-chart/): Cubic yards and 2 cubic foot bags of mulch for 4×8 to 20×20 ft beds at 3 inches deep, with bag cost vs bulk delivery. Click a size for 2 to 4 inch depths.
+- [Mulch for a 4×8 bed](https://bagorbulk.com/how-much-mulch-for-4x8-bed/): A 4×8 ft bed at 3 in deep needs 0.31 yd³ or 5 2 cu ft bags of mulch. Chart for 2 to 4 inches and bag vs bulk cost.
+- [Mulch for a 4×10 bed](https://bagorbulk.com/how-much-mulch-for-4x10-bed/): A 4×10 ft bed at 3 in deep needs 0.39 yd³ or 6 2 cu ft bags of mulch. Chart for 2 to 4 inches and bag vs bulk cost.
+- [Mulch for a 5×10 bed](https://bagorbulk.com/how-much-mulch-for-5x10-bed/): A 5×10 ft bed at 3 in deep needs 0.49 yd³ or 7 2 cu ft bags of mulch. Chart for 2 to 4 inches and bag vs bulk cost.
+- [Mulch for a 8×8 bed](https://bagorbulk.com/how-much-mulch-for-8x8-bed/): A 8×8 ft bed at 3 in deep needs 0.62 yd³ or 9 2 cu ft bags of mulch. Chart for 2 to 4 inches and bag vs bulk cost.
+- [Mulch for a 10×10 bed](https://bagorbulk.com/how-much-mulch-for-10x10-bed/): A 10×10 ft bed at 3 in deep needs 0.97 yd³ or 14 2 cu ft bags of mulch. Chart for 2 to 4 inches and bag vs bulk cost.
+- [Mulch for a 10×20 bed](https://bagorbulk.com/how-much-mulch-for-10x20-bed/): A 10×20 ft bed at 3 in deep needs 1.94 yd³ or 27 2 cu ft bags of mulch. Chart for 2 to 4 inches and bag vs bulk cost.
+- [Mulch for a 12×12 bed](https://bagorbulk.com/how-much-mulch-for-12x12-bed/): A 12×12 ft bed at 3 in deep needs 1.40 yd³ or 19 2 cu ft bags of mulch. Chart for 2 to 4 inches and bag vs bulk cost.
+- [Mulch for a 20×20 bed](https://bagorbulk.com/how-much-mulch-for-20x20-bed/): A 20×20 ft bed at 3 in deep needs 3.89 yd³ or 53 2 cu ft bags of mulch. Chart for 2 to 4 inches and bag vs bulk cost.
+- [Topsoil by lawn and garden size](https://bagorbulk.com/topsoil-by-yard-and-garden-size/): Cubic yards and tons of topsoil for lawns from 1,000 sq ft to a quarter acre and 4×8 to 10×20 ft gardens, with bulk delivery cost. Click a size for more.
+- [Topsoil for a 1,000 sq ft lawn](https://bagorbulk.com/topsoil-for-1000-sq-ft-lawn/): A 1,000 sq ft lawn needs 13.6 cubic yards (14.9 tons) of topsoil at 4 inches. Depth chart from 1 to 6 in, bags vs bulk cost.
+- [Topsoil for a 2,000 sq ft lawn](https://bagorbulk.com/topsoil-for-2000-sq-ft-lawn/): A 2,000 sq ft lawn needs 27.2 cubic yards (29.9 tons) of topsoil at 4 inches. Depth chart from 1 to 6 in, bags vs bulk cost.
+- [Topsoil for a 5,000 sq ft lawn](https://bagorbulk.com/topsoil-for-5000-sq-ft-lawn/): A 5,000 sq ft lawn needs 67.9 cubic yards (74.7 tons) of topsoil at 4 inches. Depth chart from 1 to 6 in, bags vs bulk cost.
+- [Topsoil for a 10,000 sq ft lawn](https://bagorbulk.com/topsoil-for-10000-sq-ft-lawn/): A 10,000 sq ft lawn needs 135.8 cubic yards (149.4 tons) of topsoil at 4 inches. Depth chart from 1 to 6 in, bags vs bulk cost.
+- [Topsoil for a 10,890 sq ft lawn](https://bagorbulk.com/topsoil-for-10890-sq-ft-lawn/): A 10,890 sq ft lawn needs 147.9 cubic yards (162.7 tons) of topsoil at 4 inches. Depth chart from 1 to 6 in, bags vs bulk cost.
+- [Topsoil for a 4×8 ft garden](https://bagorbulk.com/topsoil-for-4x8-garden/): A 4×8 ft garden needs 0.7 cubic yards (0.7 tons) of topsoil at 6 inches. Depth chart from 4 to 12 in, bags vs bulk cost.
+- [Topsoil for a 10×10 ft garden](https://bagorbulk.com/topsoil-for-10x10-garden/): A 10×10 ft garden needs 2.0 cubic yards (2.2 tons) of topsoil at 6 inches. Depth chart from 4 to 12 in, bags vs bulk cost.
+- [Topsoil for a 10×20 ft garden](https://bagorbulk.com/topsoil-for-10x20-garden/): A 10×20 ft garden needs 4.1 cubic yards (4.5 tons) of topsoil at 6 inches. Depth chart from 4 to 12 in, bags vs bulk cost.
+- [Sand for pavers by patio size](https://bagorbulk.com/sand-for-pavers-by-patio-size/): Bedding sand for paver patios from 10×10 to 20×20 ft at 1 inch deep: tons, cubic yards and 0.5 ft³ bags, plus joint sand and base notes.
+- [Sand for a 10×10 paver patio](https://bagorbulk.com/sand-for-10x10-paver-patio/): A 10×10 ft paver patio needs 0.46 tons (19 50 lb bags) of bedding sand at 1 in, plus 1.9 tons of gravel base at 4 in.
+- [Sand for a 12×12 paver patio](https://bagorbulk.com/sand-for-12x12-paver-patio/): A 12×12 ft paver patio needs 0.66 tons (27 50 lb bags) of bedding sand at 1 in, plus 2.7 tons of gravel base at 4 in.
+- [Sand for a 12×16 paver patio](https://bagorbulk.com/sand-for-12x16-paver-patio/): A 12×16 ft paver patio needs 0.88 tons (36 50 lb bags) of bedding sand at 1 in, plus 3.6 tons of gravel base at 4 in.
+- [Sand for a 16×16 paver patio](https://bagorbulk.com/sand-for-16x16-paver-patio/): A 16×16 ft paver patio needs 1.17 tons (47 50 lb bags) of bedding sand at 1 in, plus 4.9 tons of gravel base at 4 in.
+- [Sand for a 20×20 paver patio](https://bagorbulk.com/sand-for-20x20-paver-patio/): A 20×20 ft paver patio needs 1.83 tons (74 50 lb bags) of bedding sand at 1 in, plus 7.6 tons of gravel base at 4 in.
+- [Concrete for a 4x4 post](https://bagorbulk.com/concrete-for-4x4-post/): Bags of concrete per hole for a 4×4 fence or deck post: about 2.5 80 lb bags for a 10 in hole 30 in deep. Chart for several hole sizes and post counts.
+- [Concrete for a 6x6 post](https://bagorbulk.com/concrete-for-6x6-post/): Bags of concrete per hole for a 6×6 post: about 5.0 80 lb bags for a 12 in hole 42 in deep. Chart for several hole sizes and post counts.
+- [Concrete for a mailbox post](https://bagorbulk.com/concrete-for-mailbox-post/): Bags of concrete per hole for a mailbox post: about 2.0 80 lb bags for a 10 in hole 24 in deep. Chart for several hole sizes and post counts.
+- [Concrete for a chain link post](https://bagorbulk.com/concrete-for-chain-link-post/): Bags of concrete per hole for a chain-link fence post: about 1.6 80 lb bags for a 8 in hole 30 in deep. Chart for several hole sizes and post counts.
+- [Concrete for a deck post](https://bagorbulk.com/concrete-for-deck-post/): Bags of concrete per hole for a deck footing post: about 5.0 80 lb bags for a 12 in hole 42 in deep. Chart for several hole sizes and post counts.
 
 ## FAQ
 ### How do I calculate cubic yards?
