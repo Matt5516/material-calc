@@ -128,3 +128,4 @@ About 10% for concrete, gravel and soil (spillage, compaction and settling) and 
 - [DynastyMath](https://dynastymath.com/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
 - [ClockInMath](https://matt5516.github.io/time-card-calc/): Time card calculator: weekly hours, decimal hours, overtime and gross pay, with a printable timesheet.
 - [CoatMath](https://matt5516.github.io/paint-calc/): Paint calculator that picks the cheapest cans to buy: gallons, quarts and 5-gallon buckets.
+- [SidewallMath](https://matt5516.github.io/tire-size-calc/): Tire size calculator: compare two sizes, true speedometer, sizes that fit your wheel, regear and wheel offset.
