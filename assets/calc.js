@@ -90,6 +90,32 @@ function paverPlan(o){
   var cost=(o.price!=null&&o.price!==''&&+o.price>0)? pavers*(+o.price) : null;
   return {area:r2(area), perSqFt:Math.round(per*1000)/1000, net:Math.ceil(net-1e-9), pavers:pavers, base:base, sand:sand, cost:cost==null?null:r2(cost)};
 }
-var api = {SEED:SEED, SEED_BAGS:SEED_BAGS, seedPlan:seedPlan, bestBag:bestBag, paverPlan:paverPlan, MATERIALS:MATERIALS, CUFT_PER_YD:CUFT_PER_YD, areaSqFt:areaSqFt, cuft:cuft, totalCuFt:totalCuFt, withWaste:withWaste, bagsNeeded:bagsNeeded, plan:plan, coverage:coverage, r2:r2, ceilTo:ceilTo};
+// ---- Firewood. A full cord is 128 ft3 of stacked wood (4 x 4 x 8 ft). A "face cord" (rick) is 4 ft high x 8 ft long x ONE piece length deep, so its size depends on the log length.
+// Store bundle size is NOT standardised (varies by brand); 0.75 ft3 is only a starting assumption the tool lets you edit.
+var CORD_CUFT = 128, FACE_SQFT = 32, PIECE_LENGTHS = [12,16,18,24], BUNDLE_CUFT = 0.75;
+function faceCordCuFt(pieceIn){ return FACE_SQFT*(+pieceIn||0)/12; }
+// Dimension (value + unit 'ft'|'in') -> feet
+function toFt(v,u){ v=+v||0; return u==='in'? v/12 : v; }
+// o: {burnPerMonth (optional), mode:'stack'|'cords'|'face', l,h,d (+ lu,hu,du units 'ft'|'in', default ft) | qty, pieceIn (default 16), bundleCuFt (default 0.75), bundlePrice, cordPrice (per full cord), delivery}
+function firewoodPlan(o){
+  var piece=+o.pieceIn>0? +o.pieceIn : 16, cuft, face;
+  if(o.mode==='cords'){ cuft=(+o.qty||0)*CORD_CUFT; }
+  else if(o.mode==='face'){ cuft=(+o.qty||0)*faceCordCuFt(piece); }
+  else { var l=toFt(o.l,o.lu), h=toFt(o.h,o.hu), d=toFt(o.d,o.du); cuft=l*h*d; piece=d*12; }
+  var fc=piece>0? cuft/faceCordCuFt(piece) : 0;
+  var bu=+o.bundleCuFt>0? +o.bundleCuFt : BUNDLE_CUFT, bundles=cuft>0? Math.ceil(cuft/bu - 1e-9) : 0;
+  var bp=(o.bundlePrice!=null&&o.bundlePrice!==''&&+o.bundlePrice>0)? +o.bundlePrice : null, cp=(o.cordPrice!=null&&o.cordPrice!==''&&+o.cordPrice>0)? +o.cordPrice : null;
+  var dl=+o.delivery>0? +o.delivery : 0, burn=+o.burnPerMonth>0? +o.burnPerMonth : null;  // burnPerMonth: face cords (same log length) the user burns per month; no default
+  
+  var bundleCost=bp!=null? bundles*bp : null, cordCost=(cp!=null&&cuft>0)? cuft/CORD_CUFT*cp+dl : null;
+  var cheaper=(bundleCost!=null&&cordCost!=null)? (bundleCost<cordCost?'bundles':(bundleCost>cordCost?'cord':'tie')) : null;
+  return {cuft:r2(cuft), cords:Math.round(cuft/CORD_CUFT*1000)/1000, faceCords:Math.round(fc*1000)/1000, pieceIn:r2(piece), bundles:bundles, bundleCuFt:bu,
+          bundleCost:bundleCost==null?null:r2(bundleCost), cordCost:cordCost==null?null:r2(cordCost), cheaper:cheaper,
+          savings:cheaper?r2(Math.abs(bundleCost-cordCost)):null,
+          breakEvenBundlePrice:(cordCost!=null&&bundles>0)? r2(cordCost/bundles) : null,   // a bundle must cost less than this to beat the delivered wood
+          months:burn!=null&&fc>0? Math.round(fc/burn*100)/100 : null,
+          bundleCostPerCord:bp!=null? r2(bp/bu*CORD_CUFT) : null};
+}
+var api = {firewoodPlan:firewoodPlan, faceCordCuFt:faceCordCuFt, CORD_CUFT:CORD_CUFT, PIECE_LENGTHS:PIECE_LENGTHS, BUNDLE_CUFT:BUNDLE_CUFT, SEED:SEED, SEED_BAGS:SEED_BAGS, seedPlan:seedPlan, bestBag:bestBag, paverPlan:paverPlan, MATERIALS:MATERIALS, CUFT_PER_YD:CUFT_PER_YD, areaSqFt:areaSqFt, cuft:cuft, totalCuFt:totalCuFt, withWaste:withWaste, bagsNeeded:bagsNeeded, plan:plan, coverage:coverage, r2:r2, ceilTo:ceilTo};
 if (typeof module!=='undefined' && module.exports) module.exports=api; else root.BBCalc=api;
 })(typeof window!=='undefined'?window:this);

@@ -3,7 +3,7 @@
 > Free concrete, gravel, mulch and topsoil calculators. Get cubic yards, tons and bag counts, and see whether bags or a bulk delivery costs less.
 
 URL: https://bagorbulk.com/
-Last updated: 2026-10-18
+Last updated: 2026-10-19
 Cost: free, no signup, runs in the browser.
 
 ## Key facts
@@ -24,6 +24,7 @@ Cost: free, no signup, runs in the browser.
 - [Topsoil & sand calculator](https://bagorbulk.com/topsoil-calculator/): Free topsoil and sand calculator for raised beds, lawns and paver bases. Get cubic feet, cubic yards, bags and tons, and compare bags with a bulk delivery. How it works: Cubic feet = area × depth (in) ÷ 12, plus 10% for settling. Tons = cubic yards × density (topsoil about 1.1, sand about 1.35).
 - [Cubic yard calculator](https://bagorbulk.com/cubic-yard-calculator/): Free cubic yard calculator: enter length, width and depth to get cubic yards, cubic feet, cubic meters and tons of gravel, soil, sand, mulch or concrete. How it works: Cubic yards = cubic feet ÷ 27; cubic feet = area (ft²) × depth (in) ÷ 12. Tons = cubic yards × the material’s density, which you can change.
 - [Grass seed calculator](https://bagorbulk.com/grass-seed-calculator/): Free grass seed calculator: pounds and bags (3, 7, 20, 50 lb) for a new lawn or overseeding, by grass type, from square feet, length × width or acres. How it works: Pounds = area ÷ 1,000 × seeding rate (lb per 1,000 sq ft). Rates are mid-range values from university extension guidance and differ for new lawns and overseeding; you can type your bag’s label rate.
+- [Firewood calculator](https://bagorbulk.com/firewood-calculator/): Free firewood calculator: turn a stack size or cords into cubic feet, full cords, face cords and store bundles, then compare bundles with a delivered cord. How it works: Cubic feet = length × height × depth. A full cord is 128 ft³ (4 × 4 × 8 ft), so cords = cubic feet ÷ 128. A face cord is 4 × 8 ft × one log length deep, so it is 32 ft² × log length ÷ 12. Bundles = cubic feet ÷ bundle size (an editable assumption, 0.75 ft³ to start).
 - [Paver calculator](https://bagorbulk.com/paver-calculator/): Free paver calculator: how many pavers for a patio or walkway, with waste, plus gravel base and bedding sand in cubic yards, tons and bags, and bags vs bulk. How it works: Pavers = area × 144 ÷ (paver length × width in inches), plus extra for cuts. Base and sand = area × depth ÷ 12, plus compaction, then converted to yards, tons and bags.
 - [Sand calculator](https://bagorbulk.com/sand-calculator/): Free sand calculator: cubic yards, tons and 50 lb bags for paver bedding, sandboxes, leveling and fill, with a bags vs bulk delivery comparison. How it works: Cubic feet = area × depth (in) ÷ 12, plus 10% extra. Tons = cubic yards × 1.35 (sand density, editable). A 50 lb bag is about 0.5 cubic feet.
 
@@ -44,6 +45,8 @@ Cost: free, no signup, runs in the browser.
 - [How many pavers do I need?](https://bagorbulk.com/how-many-pavers-do-i-need/): Pavers needed for 10×10 to 20×20 patios in 4×8, 6×6, 6×9, 12×12, 16×16 and 12×24 sizes with 7% extra, plus pavers per square foot and base and sand quantities.
 - [Cubic feet to cubic yards](https://bagorbulk.com/cubic-feet-to-cubic-yards/): There are 27 cubic feet in a cubic yard. Convert cubic feet to cubic yards and cubic meters with a quick chart, plus square feet × depth to yards.
 - [Bag or bulk: how to decide](https://bagorbulk.com/bag-or-bulk/): When to buy mulch, gravel, soil and concrete in bags and when to order a bulk delivery: break-even sizes, delivery fees, labor and storage.
+- [How much is a cord of wood?](https://bagorbulk.com/how-much-is-a-cord-of-wood/): A full cord of firewood is 128 cubic feet (4×4×8 ft). A face cord or rick is 4×8 ft by one log length deep: 1/3 cord for 16 inch logs. Size chart and bundle counts.
+- [How long does a cord last?](https://bagorbulk.com/how-long-does-a-cord-of-firewood-last/): A cord lasts as many months as the face cords it holds divided by the face cords you burn per month. Worked table for 16 and 24 inch wood; enter your own burn rate.
 - [Concrete slab calculator chart](https://bagorbulk.com/concrete-slab-calculator-chart/): Cubic yards and 80 lb bags of concrete for 4×4 to 30×30 ft slabs at 4, 5 and 6 inches thick, with bag cost versus ready-mix. Click a size for details.
 - [Concrete for a 4×4 slab](https://bagorbulk.com/how-much-concrete-for-4x4-slab/): A 4×4 ft slab at 4 in needs 0.22 yd³ or 10 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.
 - [Concrete for a 8×8 slab](https://bagorbulk.com/how-much-concrete-for-8x8-slab/): A 8×8 ft slab at 4 in needs 0.87 yd³ or 40 80 lb bags. Bag cost vs ready-mix, plus 5 and 6 inch thickness, with short-load fee.

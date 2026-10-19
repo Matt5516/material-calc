@@ -11,6 +11,7 @@ Free concrete, gravel, mulch and topsoil calculators. Get cubic yards, tons and 
 - [Topsoil & sand calculator](https://bagorbulk.com/topsoil-calculator/): Raised beds, lawns and paver sand: cubic yards, bags and bulk cost.
 - [Cubic yard calculator](https://bagorbulk.com/cubic-yard-calculator/): Any material: cubic feet, cubic yards, cubic meters and tons, with your own density.
 - [Grass seed calculator](https://bagorbulk.com/grass-seed-calculator/): Pounds and bags of grass seed for a new lawn or overseeding, by grass type.
+- [Firewood calculator](https://bagorbulk.com/firewood-calculator/): Cords, face cords and store bundles from a stack size, plus bundles vs a delivered cord.
 - [Paver calculator](https://bagorbulk.com/paver-calculator/): How many pavers for a patio, plus the gravel base and bedding sand.
 - [Sand calculator](https://bagorbulk.com/sand-calculator/): Cubic yards, tons and 50 lb bags of sand for pavers, play areas and leveling.
 
