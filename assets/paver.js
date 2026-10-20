@@ -12,10 +12,10 @@ addEventListener('DOMContentLoaded',function(){ 'use strict';
     $('fW').hidden=circ; $('lnL').textContent=circ?'Diameter (ft)':'Length (ft)'; $('fCust').hidden=ps!=='custom';
     var bad=0; form.querySelectorAll('input[type=number]').forEach(function(el){ var b=el.value!==''&&(+el.value<0||!isFinite(+el.value)); el.setAttribute('aria-invalid',b?'true':'false'); if(b) bad++; });
     history.replaceState(null,'',UI.stateURL());
-    if(bad){ out.innerHTML='<div class="alert err">'+UI.icon('alert')+'<div>Some numbers are negative or invalid. Fix the highlighted fields.</div></div>'; last=''; return; }
+    if(bad){ out.innerHTML='<div class="alert err">'+UI.icon('alert')+'<div>Negative or invalid numbers. Fix the highlighted fields.</div></div>'; last=''; return; }
     var pl,pw; if(ps==='custom'){ pl=n('pl'); pw=n('pw'); } else { var q=ps.split('x'); pl=+q[0]; pw=+q[1]; }
     var r=C.paverPlan({shape:shape,l:n('ln'),w:n('wd'),pl:pl,pw:pw,waste:n('ws'),baseIn:n('bi'),sandIn:n('si'),baseWaste:n('bw'),sandWaste:n('bw'),price:$('pp').value===''?null:n('pp')});
-    if(!r.area||!r.pavers){ out.innerHTML='<div class="empty">'+UI.icon('chart')+'<p><strong>Enter your patio size</strong><br>Length and width (or a diameter) in feet, and a paver size.</p></div>'; last=''; return; }
+    if(!r.area||!r.pavers){ out.innerHTML='<div class="empty">'+UI.icon('chart')+'<p><strong>Add your patio size</strong><br>Length and width (or a diameter) in feet, plus a paver size.</p></div>'; last=''; return; }
     var h='<h2>'+UI.icon('chart')+'You need '+fmt(r.pavers)+' pavers ('+pl+' × '+pw+' in)</h2>';
     h+='<div class="verdict good"><span class="vicon">'+UI.icon('check')+'</span><div><strong class="big">'+fmt(r.pavers)+' pavers, '+fmt(r.base.tons,1)+' tons of base, '+fmt(r.sand.tons,2)+' tons of sand.</strong><span>'+fmt(r.area,1)+' sq ft takes '+fmt(r.net)+' pavers ('+r.perSqFt+' per sq ft), plus '+fmt(n('ws'))+'% extra for cuts and breakage.'+(r.cost!=null?' Pavers alone: '+m(r.cost,true)+'.':'')+'</span></div></div>';
     h+='<div class="stats s3">'+stat('Pavers to buy',fmt(r.pavers))+stat('Area',fmt(r.area,1)+' sq ft')+stat('Pavers per sq ft',String(r.perSqFt))+'</div>';

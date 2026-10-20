@@ -38,17 +38,17 @@ addEventListener('DOMContentLoaded',function(){ 'use strict';
     var bad=0; form.querySelectorAll('input[type=number]').forEach(function(el){ var b=el.value!==''&&(+el.value<0||!isFinite(+el.value)); el.setAttribute('aria-invalid',b?'true':'false'); if(b) bad++; });
     $('a').value=enc(as)===enc([DEF])?'':enc(as);
     history.replaceState(null,'',UI.stateURL());
-    if(bad){ out.innerHTML='<div class="alert err">'+UI.icon('alert')+'<div>Some numbers are negative or invalid. Fix the highlighted fields.</div></div>'; return; }
+    if(bad){ out.innerHTML='<div class="alert err">'+UI.icon('alert')+'<div>Negative or invalid numbers. Fix the highlighted fields.</div></div>'; return; }
     var opt=$('bag').selectedOptions[0];
     var r=C.plan({material:k,areas:as,waste:n('ws'),bagCuFt:+$('bag').value,bagLbs:opt&&opt.dataset.lbs?+opt.dataset.lbs:null,bagPrice:n('bp'),bulkPrice:n('up'),delivery:n('dl'),min:n('mn'),density:n('dn'),shortLoadFee:$('sl')?n('sl'):0});
-    if(!r.cuft){ out.innerHTML='<div class="empty">'+UI.icon('chart')+'<p><strong>Enter your measurements</strong><br>Length, width and depth of the area you’re filling.</p></div>'; return; }
+    if(!r.cuft){ out.innerHTML='<div class="empty">'+UI.icon('chart')+'<p><strong>Add your measurements</strong><br>Length, width and depth. Your answer shows up here.</p></div>'; return; }
     var ton=d.bulk.per==='ton', unit=ton?'tons':'yd³', good=r.cheaper==='bags';
     var h='<h2>'+UI.icon('chart')+'You need '+fmt(r.yd,2)+' cubic yards of '+d.name.toLowerCase()+'</h2>';
-    h+='<div class="verdict '+(good?'good':'warn')+'"><span class="vicon">'+UI.icon(good?'check':'swap')+'</span><div><strong class="big">'+(good?'Buy '+r.bags+' bags':'Order '+fmt(r.orderQty,2)+' '+unit+' in bulk')+'. It saves about '+m(r.savings,true)+'.</strong><span>'+r.bags+' bags cost '+m(r.bagCost,true)+'; a bulk delivery costs '+m(r.bulkCost,true)+(r.shortLoad?' including a '+m(r.shortLoad,true)+' short-load fee':'')+'.'+(r.breakEvenYd!=null?' Bulk becomes cheaper above about '+fmt(r.breakEvenYd,2)+' yd³ ('+fmt(r.breakEvenCuFt,1)+' ft³) at these prices.':'')+'</span></div></div>';
+    h+='<div class="verdict '+(good?'good':'warn')+'"><span class="vicon">'+UI.icon(good?'check':'swap')+'</span><div><strong class="big">'+(good?'Buy '+r.bags+' bags':'Order '+fmt(r.orderQty,2)+' '+unit+' in bulk')+'. You save about '+m(r.savings,true)+'.</strong><span>'+r.bags+' bags cost '+m(r.bagCost,true)+'; a bulk delivery costs '+m(r.bulkCost,true)+(r.shortLoad?' including a '+m(r.shortLoad,true)+' short-load fee':'')+'.'+(r.breakEvenYd!=null?' Bulk wins above about '+fmt(r.breakEvenYd,2)+' yd³ ('+fmt(r.breakEvenCuFt,1)+' ft³) at these prices.':'')+'</span></div></div>';
     h+='<div class="stats s3">'+stat('Cubic yards',fmt(r.yd,2))+stat('Cubic feet',fmt(r.cuft,1))+stat(ton||k==='concrete'?'Weight':'Tons (approx.)',ton||k==='concrete'?fmt(r.tons,2)+' tons':fmt(r.tons,2))
       +stat('Bags ('+opt.textContent.replace(/ bag.*$/,'')+')',fmt(r.bags))+stat('Bag weight total',fmt(r.totalBagLbs)+' lb')+stat('Cubic meters',fmt(r.cuft*0.0283168,2))+'</div>';
     h+=UI.bars([{label:'Bags',value:r.bagCost,color:'var(--brand)'},{label:'Bulk delivery',value:r.bulkCost,color:'var(--brand-2)'}],{label:'Cost of bags versus bulk delivery',h:170});
-    h+='<p class="hint">Includes '+fmt(n('ws'))+'% extra for waste and settling ('+fmt(r.rawCuFt,1)+' ft³ before it). '+(r.totalBagLbs>2000?'That many bags weighs over a ton: plan several trips or pay for delivery.':'')+'</p>';
+    h+='<p class="hint">Includes '+fmt(n('ws'))+'% extra for waste and settling ('+fmt(r.rawCuFt,1)+' ft³ before it). '+(r.totalBagLbs>2000?'That’s over a ton of bags. Plan several trips or pay for delivery.':'')+'</p>';
     h+=diagram(as[0]);
     h+='<div class="actions"><button type="button" class="btn ghost sm" data-print>'+UI.icon('copy')+'Print / PDF</button><button type="button" class="btn ghost sm" id="copySum">'+UI.icon('copy')+'Copy shopping list</button></div>';
     out.innerHTML=h;
