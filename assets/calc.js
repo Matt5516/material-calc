@@ -116,6 +116,30 @@ function firewoodPlan(o){
           months:burn!=null&&fc>0? Math.round(fc/burn*100)/100 : null,
           bundleCostPerCord:bp!=null? r2(bp/bu*CORD_CUFT) : null};
 }
-var api = {firewoodPlan:firewoodPlan, faceCordCuFt:faceCordCuFt, CORD_CUFT:CORD_CUFT, PIECE_LENGTHS:PIECE_LENGTHS, BUNDLE_CUFT:BUNDLE_CUFT, SEED:SEED, SEED_BAGS:SEED_BAGS, seedPlan:seedPlan, bestBag:bestBag, paverPlan:paverPlan, MATERIALS:MATERIALS, CUFT_PER_YD:CUFT_PER_YD, areaSqFt:areaSqFt, cuft:cuft, totalCuFt:totalCuFt, withWaste:withWaste, bagsNeeded:bagsNeeded, plan:plan, coverage:coverage, r2:r2, ceilTo:ceilTo};
+// ---- Ice melt. Nothing here is a default: coverage comes from the bag label, so every input is the user's.
+// Label rates convert to pounds per square foot: lb per sq yd / 9, oz per sq yd / 16 / 9, lb per 1,000 sq ft / 1000, oz per sq ft / 16. 'sqft' means the label already says sq ft per bag.
+var ICE_UNITS = {sqft:'sq ft per bag', lbyd:'lb per sq yd', ozyd:'oz per sq yd', lbk:'lb per 1,000 sq ft', ozft:'oz per sq ft'};
+function lbPerSqFt(v,unit){ v=+v||0; if(v<=0) return 0; return unit==='lbyd'? v/9 : unit==='ozyd'? v/16/9 : unit==='lbk'? v/1000 : unit==='ozft'? v/16 : 0; }
+// sq ft one bag covers: straight from the label, or bag pounds / pounds per sq ft. 0 when it cannot be worked out.
+function iceCoverage(bagLbs,v,unit){ if(unit==='sqft'||!unit) return (+v>0)? +v : 0; var r=lbPerSqFt(v,unit); return (r>0&&+bagLbs>0)? (+bagLbs)/r : 0; }
+function posNum(x){ return (x!=null&&x!==''&&+x>0)? +x : null; }
+function r3(x){ return Math.round(x*1000)/1000; }
+// o: {sqft | areas:[{l,w}] (ft), apps (applications), bagLbs, cov, covUnit, bagPrice, bulkPrice, bulkLbs (pounds in the pallet/bulk purchase), delivery}
+function iceMeltPlan(o){
+  var sqft=posNum(o.sqft)||0; if(!sqft&&o.areas) o.areas.forEach(function(a){ sqft+=(+a.l||0)*(+a.w||0); });
+  var apps=posNum(o.apps), bagLbs=posNum(o.bagLbs), cov=iceCoverage(bagLbs,o.cov,o.covUnit);
+  var res={sqft:r2(sqft), cov:cov>0?r2(cov):null, bagsPer:null, bagsSeason:null, lbsPer:null, lbsSeason:null, spareLbs:null, bagCost:null, bulkUnits:null, bulkCost:null, cheaper:null, savings:null, bagPerLb:null, bulkPerLb:null};
+  if(!(sqft>0&&cov>0&&bagLbs)) return res;
+  res.bagsPer=Math.ceil(sqft/cov-1e-9); res.lbsPer=r2(sqft/cov*bagLbs);
+  if(!apps) return res;
+  var need=sqft*apps/cov;   // bags' worth of product for the whole season, rounded up once
+  res.bagsSeason=Math.ceil(need-1e-9); res.lbsSeason=r2(need*bagLbs); res.spareLbs=r2((res.bagsSeason-need)*bagLbs);
+  var bp=posNum(o.bagPrice), up=posNum(o.bulkPrice), bl=posNum(o.bulkLbs), dl=posNum(o.delivery)||0;
+  if(bp!=null){ res.bagCost=r2(res.bagsSeason*bp); res.bagPerLb=r3(bp/bagLbs); }
+  if(up!=null&&bl!=null){ res.bulkUnits=Math.ceil(need*bagLbs/bl-1e-9); res.bulkCost=r2(res.bulkUnits*up+dl); res.bulkPerLb=r3(up/bl); }
+  if(res.bagCost!=null&&res.bulkCost!=null){ res.cheaper=res.bagCost<res.bulkCost?'bags':(res.bagCost>res.bulkCost?'bulk':'tie'); res.savings=r2(Math.abs(res.bagCost-res.bulkCost)); }
+  return res;
+}
+var api = {iceMeltPlan:iceMeltPlan, iceCoverage:iceCoverage, lbPerSqFt:lbPerSqFt, ICE_UNITS:ICE_UNITS,firewoodPlan:firewoodPlan, faceCordCuFt:faceCordCuFt, CORD_CUFT:CORD_CUFT, PIECE_LENGTHS:PIECE_LENGTHS, BUNDLE_CUFT:BUNDLE_CUFT, SEED:SEED, SEED_BAGS:SEED_BAGS, seedPlan:seedPlan, bestBag:bestBag, paverPlan:paverPlan, MATERIALS:MATERIALS, CUFT_PER_YD:CUFT_PER_YD, areaSqFt:areaSqFt, cuft:cuft, totalCuFt:totalCuFt, withWaste:withWaste, bagsNeeded:bagsNeeded, plan:plan, coverage:coverage, r2:r2, ceilTo:ceilTo};
 if (typeof module!=='undefined' && module.exports) module.exports=api; else root.BBCalc=api;
 })(typeof window!=='undefined'?window:this);

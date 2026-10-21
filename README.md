@@ -14,6 +14,7 @@ Free concrete, gravel, mulch and topsoil calculators. Get cubic yards, tons and 
 - [Firewood calculator](https://bagorbulk.com/firewood-calculator/): Cords, face cords and store bundles from a stack size, plus bundles vs a delivered cord.
 - [Paver calculator](https://bagorbulk.com/paver-calculator/): How many pavers for a patio, plus the gravel base and bedding sand.
 - [Sand calculator](https://bagorbulk.com/sand-calculator/): Cubic yards, tons and 50 lb bags of sand for pavers, play areas and leveling.
+- [Ice melt calculator](https://bagorbulk.com/ice-melt-calculator/): Bags of ice melt per application and for the winter, plus bag vs bulk or pallet cost.
 
 ## Popular guides
 - [How many bags of concrete?](https://bagorbulk.com/how-many-bags-of-concrete/)
